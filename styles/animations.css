@@ -1,4 +1,4 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+﻿/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
 ✦ theme-dark — класс тёмной темы
@@ -12,3 +12,98 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+
+.like-icon {
+  vertical-align: bottom; 
+}
+
+.sparks {
+  opacity: 0%;
+}
+
+.core {
+  fill: var(--button-background-color, #fff);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.main-body {
+  fill: var(--button-background-color, #fff);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--contour-heart, #000);
+  transition: fill 0.3s linear; 
+}
+
+.like-icon:hover .main-body {
+  fill: var(--contour-heart, #000);
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--filling-heart, #f00);
+  transition: fill 0.3s linear; 
+}
+
+.like-icon:active .main-body {
+  fill: var(--filling-heart, #f00);
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--filling-heart, #f00);
+  transition: fill 0.3s linear; 
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--filling-heart, #f00);
+  transition: fill 0.3s 0.03s linear;
+}
+
+.contour {
+  fill: var(--contour-heart, #000);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--filling-heart, #f00);
+  transition: fill 0.3s 0.06s linear;
+} 
+
+.like-icon.is-liked .heart {
+  animation: like 0.3s 0.1s ease-in normal;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in normal;
+}
+
+@keyframes sparks {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes like {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+} 
+
+@keyframes arrow {
+  0% {
+    left: -15px;
+  }
+  100% {
+    left: -11px;
+  }
+} 
