@@ -10,7 +10,6 @@
   :root {
     --main-text-color: #00CC14;
     --nav-color: #00CC14;
-    --nav-font-size: 14px;
     --nav-hover-color: rgba(0 204 20 / 0.6);
     --border-color: #00CC14;
     --button-background-color: #000;
@@ -23,7 +22,7 @@
       linear-gradient(#007f0c 0.1%, #004306 100%);
     --contour-heart: #00CC14;
     --filling-heart: #f00;
-    --card-font-weight-title: 758; 
+    --card-font-weight-title: 785; 
     --card-font-weight-text: 465;
     --link-shadow: rgba(0 204 20 / 0.5);
    }
@@ -32,7 +31,6 @@
 :root.theme-dark {
     --main-text-color: #00CC14;
     --nav-color: #00CC14;
-    --nav-font-size: 14px;
     --nav-hover-color: rgba(0 204 20 / 0.6);
     --border-color: #00CC14;
     --button-background-color: #000;
@@ -65,7 +63,5 @@
       linear-gradient(#e7e7e7 0.1%, #1a1a1a 100%);
     --contour-heart: #000;
     --filling-heart: #f00;
-    --card-font-weight-title: 700; 
-    --card-font-weight-text: 400;
     --link-shadow: rgba(0 0 0 / 0.5);	 
 }
